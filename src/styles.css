@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.ValidationErr {
+  color: red;
+}
+
+.navigation-toolbar {
+  flex-direction: row-reverse !important;
+  background: transparent;
+}
+
+.mat-list-base {
+  -webkit-tap-highlight-color: transparent;
+  padding: 0 !important;
+  margin-right: 20px;
+}
+
+.headerWrap {
+  background: #eee;
+}
+
+div#heading .row {
+  text-align: center;
+  color: #2b9dff;
+}
+
+div#heading {
+  margin: 0 auto !important;
+}
+
+mat-sidenav-container.mat-drawer-container.mat-sidenav-container.navigation-sidenav-container {
+  margin: 0 !important;
+}
+
+.leftCol {
+  background: url(https://dev.uvsity.com/assets/images/bg1.png) no-repeat center
+    160px;
+  padding: 100px 10px 250px 10px;
+  background-size: contain;
+}
+
+.rightCol {
+  padding: 100px 10px 0 10px;
+}
+
+.leftH {
+  font-size: 40px !important;
+}

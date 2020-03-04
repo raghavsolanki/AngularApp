@@ -1,0 +1,34 @@
+<h5 class="login-dialog-title mat-title">Login</h5>
+<form class="formwidth" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+	<div>
+
+		<mat-form-field appearance="outline" color="accent">
+			<mat-label>Email Id </mat-label>
+			<input matInput placeholder="Email Id" formControlName="nameFormControl" #nameFormControl
+				[errorStateMatcher]="matcher">
+			<mat-error *ngIf="!nameFormControl.valid">
+				Email Id is <strong>required</strong>
+			</mat-error>
+		</mat-form-field>
+
+		<mat-form-field appearance="outline" color="accent">
+			<mat-label>Password </mat-label>
+			<input type="password" matInput placeholder="Password" #passwordFormControl
+				formControlName="passwordFormControl" [errorStateMatcher]="matcher">
+			<mat-error *ngIf="!passwordFormControl.valid">
+				Passsword is <strong>required</strong>
+			</mat-error>
+		</mat-form-field>
+		<br>
+
+		<div class="dialog-action" fxLayout="row" fxLayoutAlign="center center">
+			<button class="left-button" mat-flat-button color="primary" type="submit">
+				<mat-icon>done</mat-icon>
+			</button>
+			<button class="right-button" mat-flat-button color="primary" (click)="dialogOff()">
+				<mat-icon>clear</mat-icon>
+			</button>
+		</div>
+
+	</div>
+</form>

@@ -1,0 +1,13 @@
+@import "~@angular/material/theming";
+
+@include mat-core();
+
+$uvsity-primary: mat-palette($mat-blue, 50, 700, 100);
+
+$uvsity-accent: mat-palette($mat-blue, A700);
+
+$uvsity-warn: mat-palette($mat-red, 500);
+
+$uvsity-theme: mat-light-theme($uvsity-primary, $uvsity-accent, $uvsity-warn);
+
+@include angular-material-theme($uvsity-theme);
